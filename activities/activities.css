@@ -1,0 +1,95 @@
+body {
+	background-color: floralwhite;
+}
+
+nav{
+    background-color: white;
+    margin: 0px;
+    height: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 0%;
+    padding-left: 0%;
+}
+nav a{
+    font-size: 20px;
+    width: 200px;
+    border-right: 1px solid black;
+    text-align: center;
+    
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: #c5221e;
+}
+
+h1 {
+	text-align: center;
+}
+
+
+.main {
+	display: flex;
+}
+
+.container {
+	margin-left: 200px;
+}
+
+.favebar {
+	border: 3px double;
+	padding: 15px 15px 15px 15px;
+
+}
+.activity {
+	display: flex;
+    align-items: normal;
+}
+
+.text {
+    padding-left: 20px;
+}
+
+@media (max-width: 700px) {
+    .headerhome {height: 125px;margin-top: 5px;margin-bottom: 5px;}
+    .horizontal {padding: 0px;flex-direction: column;}
+    img {width: 70%;height: 100%;}
+    form {padding-left: 20%;}
+    h2 {font-size:25px;}
+    h3 {font-size:15px;}
+    .navigation {flex-direction: column;}
+    .grid-container {display: block;}
+  }
+
+  .navigation {
+    text-decoration: none;
+    margin-bottom: 60px;
+    border-bottom: solid;
+    border-width: 1px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navitem {
+    padding:10px;
+    text-decoration: none;  
+    font-size:20px;
+    color: black;
+  }
+  
+  .navitem:hover {
+    padding: 10px;
+    text-decoration: none;  
+    font-size:20px;
+    color: #D5302E
+  }

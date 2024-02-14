@@ -1,0 +1,152 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<title>
+			NYC Merch
+		</title>
+		<meta name="description" content="This is a page where you can buy NYC merch.">
+		<meta name="keywords" content="web programming, merch, nyc, projects">
+		<meta name="author" content="Sofia Mathew">
+
+		<link rel="stylesheet" type="text/css" href="shoppingcart.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	
+
+	</head>
+
+  <body>
+
+    <div class="navigation">
+      <a class="navitem" href="../index.html">Home</a><span> | </span>
+      <a class="navitem" href="../contactform/contact.html">Contact</a><span> | </span>
+      <a class="navitem" href="../search.html">Search</a><span> | </span>
+      <a class="navitem" href="shoppingcart.html">Merch</a><span> | </span>
+      <a class="navitem" href="../cafes/cafes.html">Cafés</a><span> | </span>
+      <a class="navitem" href="../restaurants/food.html">Restaurants</a><span> | </span>
+      <a class="navitem" href="../activities/activities.html">To-Do List</a><span> | </span>
+      <a class="navitem" href="https://citymapper.com/directions?endaddress=Washington+Square%2C+New+York%2C+NY%2C+USA&endcoord=40.730884%2C-73.997332&endname=Washington+Square+Park&startaddress=Broadway+%26+7th+Ave%2C+New+York&startcoord=40.75773%2C-73.985708&startname=Times+Square">Travel Tool</a>
+    </div>
+
+      <h2 class="horizontal">SHOP OUR MERCHANDISE</h2>
+
+    <div class="shoppingcart horizontal">
+        <div class="cartitem">
+          <div class="horizontal">
+            <img id="cartimage" src="matchbox.png" onmouseover="hover(this, 'matchbox2.png');" onmouseout="unhover(this, 'matchbox.png');">
+          </div>
+          <p class="pred" id="p1label">New Yorker’s New York Match Box</p>
+          <input type="hidden" name="p1label" value="New Yorker’s New York Match Box">
+          <p class="pred" >$5</p>
+          <input type="number" readonly hidden id="p1price" value="5">
+          <label for="quantity">Qty: </label>
+          <input type="number" name="quantity" class="quantity" id="p1" min="0" max="10">
+          <label for="subtotal">Sub Total: </label>
+          <input type="number" readonly name="subtotal" id="p1subtotal">
+          <div class="horizontal" >
+            <button id="addcart1">Update Cart</button>
+          </div>
+        </div>
+
+        <div class="cartitem">
+          <div class="horizontal">
+            <img src="poster.png" onmouseover="hover(this, 'poster2.png');" onmouseout="unhover(this, 'poster.png');">
+          </div>
+          <p class="pred" id="p2label">New Yorker’s New York Poster</p>
+          <input type="hidden" name="p2label" value="New Yorker’s New York Poster">
+          <p class="pred" >$15</p>
+          <input type="number" readonly hidden id="p2price" value="15">
+          <label for="quantity">Qty: </label>
+          <input type="number" name="quantity" class="quantity" id="p2" min="0" max="10">
+          <label for="subtotal">Sub Total: </label>
+          <input type="number" readonly name="subtotal" id="p2subtotal">
+          <div class="horizontal" >
+            <button id="addcart2">Update Cart</button>
+          </div>
+        </div>
+
+        <div class="cartitem">
+          <div class="horizontal">
+            <img src="mug.png" onmouseover="hover(this, 'mug2.png');" onmouseout="unhover(this, 'mug.png');">
+          </div>
+          <p class="pred" id="p3label">New Yorker’s New York Mug</p>
+          <input type="hidden" name="p3label" value="New Yorker’s New York Mug">
+          <p class="pred" >$10</p>
+          <input type="number" readonly hidden id="p3price" value="10">
+          <label for="quantity">Qty: </label>
+          <input type="number" name="quantity" class="quantity" id="p3" min="0" max="10">
+          <label for="subtotal">Sub Total: </label>
+          <input type="number" readonly name="subtotal" id="p3subtotal">
+          <div class="horizontal" >
+            <button id="addcart3">Update Cart</button>
+          </div>
+        </div>
+
+    </div>
+
+
+    <hr>
+
+    <div>
+      <form id="shippingform" name="shippingform" action="shoppingcart.php" method="get">
+        <div class="grid-container">
+        <div class="grid-item">
+          <h2>CART</h2>
+          <h3>Total: $<span id="total"></span></h3>
+          <input type="hidden" name="q1" id="p1hidden" value="0">
+          <input type="hidden" name="q2" id="p2hidden" value="0">
+          <input type="hidden" name="q3" id="p3hidden" value="0">
+          <input type="hidden" name="total" id="totalhidden" value="0">
+        </div>
+
+        <div class="grid-item">
+          
+            <input type="radio" id="standard" name="shippingmethod" value="standard">
+            <label for="standard">Standard Shipping - FREE</label><br>
+            <input type="radio" id="expedited" name="shippingmethod" value="expedited">
+            <label for="expedited">Expedited Shipping - $5</label>
+
+            <p></p>
+
+            <input type="radio" id="amex" name="paymentmethod" value="amex">
+            <label for="amex">Amex</label><br>
+            <input type="radio" id="visa" name="paymentmethod" value="visa">
+            <label for="visa">Visa</label>
+            <p></p>
+            <label for="ccname">Name on Card: </label>
+            <input type="text" id="ccname" name="ccname"><br>
+            <label for="ccnumber">Card Number: </label>
+            <input type="text" id="ccnumber" name="ccnumber">
+
+        </div>
+
+        <div class="grid-item">
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone Number: </label>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="address">Address: </label>
+            <input type="address" id="address" name="address"><br>
+            <label for="zipcode">Zip Code: </label>
+            <input type="text" id="zipcode" name="zipcode">
+
+            <p></p>
+
+          
+            <input type="submit" value="Place Order">
+            <input type="reset" value="Reset">
+          
+        </div>
+    </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="shoppingcart.js"></script>
+
+  </body>
+</html>

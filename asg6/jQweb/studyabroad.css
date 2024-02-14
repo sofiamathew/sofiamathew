@@ -1,0 +1,81 @@
+body {
+	background-image: url("london.jpg");
+	background-position: 0% 60%;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.maincontent {
+	width: 400px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+video {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+p {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	background-color: #f7efe5;
+	padding: 10px;
+}
+
+.nav {
+	font-family:'Poppins', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	white-space: nowrap;
+  font-weight: bold;
+
+}
+
+.links, .selected {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.header {
+	font-family: 'Playfair Display SC', serif;
+  text-transform: uppercase;
+  font-weight: 600px;
+	font-size:50px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+.header:hover {
+  color: rgba(144,153,134);
+}
+
+
+a:link, a:visited {
+	text-decoration: none;
+	color:rgba(52,74,60);
+}
+
+
+a:focus, a:hover {
+	color: rgba(144,153,134);
+  font-weight: 600px;
+}
+
+a:active {
+	opacity: 0.5;
+}
+
+a.selected:link, a.selected:visited {
+	color: rgba(144,153,134);
+}
+
+.nav a {
+	color: white;
+}

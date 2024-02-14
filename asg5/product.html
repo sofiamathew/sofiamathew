@@ -1,0 +1,117 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<title>
+			Sofia Mathew's Web Programming and Development Website
+		</title>
+		<meta name="description" content="This is a responsive website for Sofia Mathew's Web Programming class">
+		<meta name="keywords" content="web programming, assignments, portfolio, projects, home base, homepage">
+		<meta name="author" content="Sofia Mathew">
+
+		<link rel="stylesheet" type="text/css" href="../styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	
+
+	</head>
+
+  <body>
+
+      <h2>sofia & co. bakery</h2>
+
+    <div class="shoppingcart horizontal">
+        <div class="cartitem">
+          <div class="horizontal">
+            <img src="chocolatechip.jpg">
+          </div>
+          <h3 id="p1label">chocolate chip cookies</h3>
+          <p class="horizontal">price: $4</p>
+          <input type="number" readonly hidden id="p1price" value="4">
+          <label for="quantity">quantity: </label>
+          <input type="number" name="quantity" class="quantity" id="p1" min="0" max="10">
+          <label for="subtotal">subtotal: </label>
+          <input type="number" readonly name="subtotal" id="p1subtotal">
+        </div>
+
+        <div class="cartitem">
+          <div class="horizontal">
+            <img src="snickerdoodle.jpg">
+          </div>
+          <h3 id="p2label">snickerdoodle cookies</h3>
+          <p class="horizontal">price: $3</p>
+          <input type="number" readonly hidden id="p2price" value="3">
+          <label for="quantity">quantity: </label>
+          <input type="number" name="quantity" class="quantity" id="p2" min="0" max="10">
+          <label for="subtotal">subtotal: </label>
+          <input type="number" readonly name="subtotal" id="p2subtotal">
+        </div>
+
+    </div>
+
+
+
+
+    <div class="shoppingcart horizontal" class="horizontal">
+      <p>total: $<span id="total"></span></p>
+    </div>
+
+    <div>
+      <h3>shipping & payment</h3>
+      <form id="shippingform" name="shippingform" action="#">
+        <input type="radio" id="pickup" name="shippingmethod" value="pickup">
+        <label for="pickup">pickup - free</label>
+        <input type="radio" id="delivery" name="shippingmethod" value="delivery">
+        <label for="delivery">delivery - $10</label>
+
+        <p></p>
+
+        <label for="name">name: </label>
+        <input type="text" id="name" name="name">
+        <p></p>
+        <label for="email">email: </label>
+        <input type="email" id="email" name="email">
+        <p></p>
+        <label for="address">address: </label>
+        <input type="address" id="address" name="address">
+        <label for="zipcode">zip code: </label>
+        <input type="text" id="zipcode" name="zipcode">
+
+        <p></p>
+
+        <label>payment:</label>
+        <input type="radio" id="amex" name="paymentmethod" value="amex">
+        <label for="amex">amex</label>
+        <input type="radio" id="visa" name="paymentmethod" value="visa">
+        <label for="visa">visa</label>
+        <p></p>
+        <label for="ccnumber">card number: </label>
+        <input type="text" id="ccnumber" name="ccnumber">
+
+        <p></p>
+
+      
+        <input type="submit" value="checkout">
+        <input type="reset" value="reset">
+
+      </form>
+    </div>
+
+
+
+    <div class="foot">
+      <footer>
+        <p>© sofia mathew</p>
+        <a href="mailto:smm9877@nyu.edu" target="_blank">email</a>
+        <a href="../">courses</a>
+      </footer>
+    </div> 
+   
+    <script src="asg5cart.js"></script>
+
+  </body>
+</html>

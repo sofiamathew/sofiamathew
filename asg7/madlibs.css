@@ -1,0 +1,64 @@
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+}
+
+input[type=select], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form {
+  padding: 0%;
+  width: 50%;
+  align-items: center;
+}
+
+.receipt {
+  border: 1px;
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.results {
+  border: 1px;
+  border-radius: 2px;
+  border-style: solid;
+  background-color: rgb(239, 223, 142);
+  padding: 2%;
+}
+
